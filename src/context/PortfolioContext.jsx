@@ -3,13 +3,13 @@ import * as initialData from '../data/portfolioData';
 
 const PortfolioContext = createContext(null);
 
-const STORAGE_KEY = 'yash_portfolio_data_v1';
-const AUTH_KEY = 'yash_admin_authenticated';
+const STORAGE_KEY = 'deepak_portfolio_data_v1';
+const AUTH_KEY = 'deepak_admin_authenticated';
 
 // Static authentication credentials
 export const ADMIN_CREDENTIALS = {
   username: 'admin',
-  password: 'yash@admin2026',
+  password: 'deepak@admin2026',
 };
 
 export const PortfolioProvider = ({ children }) => {
@@ -123,7 +123,7 @@ export const PortfolioProvider = ({ children }) => {
     const jsonString = `data:text/json;charset=utf-8,${encodeURIComponent(JSON.stringify(data, null, 2))}`;
     const downloadAnchor = document.createElement('a');
     downloadAnchor.setAttribute('href', jsonString);
-    downloadAnchor.setAttribute('download', `yash_portfolio_backup_${new Date().toISOString().slice(0, 10)}.json`);
+    downloadAnchor.setAttribute('download', `deepak_portfolio_backup_${new Date().toISOString().slice(0, 10)}.json`);
     document.body.appendChild(downloadAnchor);
     downloadAnchor.click();
     downloadAnchor.remove();

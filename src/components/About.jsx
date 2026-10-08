@@ -1,5 +1,5 @@
 import React from 'react';
-import stackImage from '../assets/about/yash-avatar.png';
+import stackImage from '../assets/about/deepak-avatar.png';
 import { usePortfolio } from '../context/PortfolioContext';
 
 // Technology Badges with crisp SVG styling tailored for Yash
@@ -64,7 +64,7 @@ const About = () => {
               <div className="w-full aspect-[3/4] overflow-hidden rounded-xl bg-gray-900 border border-white/10">
                 <img
                   src={stackImage}
-                  alt="Yash Tiwari — AI & Data Science Student"
+                  alt="Deepak — Computer Science Student"
                   className="w-full h-full object-cover object-center transform hover:scale-105 transition-transform duration-500"
                 />
               </div>

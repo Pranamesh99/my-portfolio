@@ -74,7 +74,7 @@ const AdminPanel = () => {
       setLoginError('');
       setUsername('');
       setPassword('');
-      showToast('Welcome back, Yash! Logged in as Admin.');
+      showToast('Welcome back, Deepak! Logged in as Admin.');
     } else {
       setLoginError(res.message);
     }
@@ -168,7 +168,7 @@ const AdminPanel = () => {
               </div>
               <div>
                 <h3 className="text-xl font-black text-white font-heading">
-                  Yash Portfolio Admin
+                  Deepak Portfolio Admin
                 </h3>
                 <p className="text-white/50 text-xs font-mono">
                   Static Client Control Panel
