@@ -11,31 +11,31 @@ const ProjectVisual = ({ type }) => {
           <div className="flex items-center justify-between border-b border-white/10 pb-3">
             <div className="flex items-center gap-2">
               <span className="w-3 h-3 rounded-full bg-[#f50604] animate-pulse"></span>
-              <span className="text-xs font-mono text-white/90 font-bold uppercase tracking-wider">Algorithm &amp; Logic Suite</span>
+              <span className="text-xs font-mono text-white/90 font-bold uppercase tracking-wider">Enterprise RAG Engine</span>
             </div>
-            <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-white/10 text-white/70">Python · DSA</span>
+            <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-white/10 text-white/70">Java · Spring Boot</span>
           </div>
           <div className="my-auto grid grid-cols-3 gap-3 py-4">
             <div className="bg-white/5 border border-white/10 rounded-xl p-3">
-              <span className="text-[10px] text-white/50 block font-mono">Core Paradigms</span>
-              <span className="text-base font-bold text-white font-heading">Search &amp; Sort</span>
-              <span className="text-[9px] text-emerald-400 block mt-0.5">O(n log n)</span>
+              <span className="text-[10px] text-white/50 block font-mono">Data Processing</span>
+              <span className="text-base font-bold text-white font-heading">Chunking</span>
+              <span className="text-[9px] text-emerald-400 block mt-0.5">Semantic Splits</span>
             </div>
             <div className="bg-white/5 border border-white/10 rounded-xl p-3">
-              <span className="text-[10px] text-white/50 block font-mono">Recursion Depth</span>
-              <span className="text-base font-bold text-[#f50604] font-heading">Optimized</span>
-              <span className="text-[9px] text-white/60 block mt-0.5">Memoization</span>
+              <span className="text-[10px] text-white/50 block font-mono">Vector DB</span>
+              <span className="text-base font-bold text-[#f50604] font-heading">Qdrant</span>
+              <span className="text-[9px] text-white/60 block mt-0.5">Similarity Search</span>
             </div>
             <div className="bg-white/5 border border-white/10 rounded-xl p-3">
-              <span className="text-[10px] text-white/50 block font-mono">Test Coverage</span>
-              <span className="text-base font-bold text-white font-heading">Pass 100%</span>
-              <span className="text-[9px] text-emerald-400 block mt-0.5">Verified Logic</span>
+              <span className="text-[10px] text-white/50 block font-mono">Generation</span>
+              <span className="text-base font-bold text-white font-heading">Gemini API</span>
+              <span className="text-[9px] text-emerald-400 block mt-0.5">Contextual Gen</span>
             </div>
           </div>
           <div className="flex items-center gap-2 text-[10px] font-mono text-white/40">
-            <span>Clean Code Architecture</span>
+            <span>Retrieval-Augmented Generation</span>
             <span>•</span>
-            <span>Computational Thinking</span>
+            <span>Document Intelligence</span>
           </div>
         </div>
       );
@@ -44,8 +44,8 @@ const ProjectVisual = ({ type }) => {
       return (
         <div className="w-full h-full bg-gradient-to-br from-[#180202] via-[#0a0101] to-black p-5 flex flex-col justify-between select-none opacity-85 group-hover:opacity-100 transition-opacity duration-700">
           <div className="flex items-center justify-between border-b border-white/10 pb-2">
-            <span className="text-xs font-mono text-white/90 font-bold">Responsive Web Architecture</span>
-            <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-[#f50604]/20 text-[#ff4d4d]">HTML5 · CSS3 · JS</span>
+            <span className="text-xs font-mono text-white/90 font-bold">Interactive Financial Dashboard</span>
+            <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-[#f50604]/20 text-[#ff4d4d]">React · Zustand</span>
           </div>
           <div className="my-auto space-y-2 py-2">
             <div className="h-2 bg-white/10 rounded-full w-3/4"></div>
@@ -53,16 +53,16 @@ const ProjectVisual = ({ type }) => {
             <div className="h-2 bg-[#f50604]/40 rounded-full w-1/2"></div>
             <div className="flex gap-2 pt-2">
               <div className="flex-1 bg-white/5 border border-white/10 rounded-lg p-2 text-center">
-                <span className="text-xs font-bold text-white block">Flex &amp; Grid</span>
-                <span className="text-[9px] text-white/50 font-mono">Fluid Viewports</span>
+                <span className="text-xs font-bold text-white block">State Sync</span>
+                <span className="text-[9px] text-white/50 font-mono">Zustand</span>
               </div>
               <div className="flex-1 bg-white/5 border border-white/10 rounded-lg p-2 text-center">
-                <span className="text-xs font-bold text-[#f50604] block">Zero Overflow</span>
-                <span className="text-[9px] text-white/50 font-mono">Clean DOM</span>
+                <span className="text-xs font-bold text-[#f50604] block">Data Viz</span>
+                <span className="text-[9px] text-white/50 font-mono">Recharts</span>
               </div>
             </div>
           </div>
-          <span className="text-[9px] font-mono text-white/40">Tested on Mobile, Tablet &amp; Desktop</span>
+          <span className="text-[9px] font-mono text-white/40">Tested on Mobile, Tablet & Desktop</span>
         </div>
       );
 
@@ -70,96 +70,53 @@ const ProjectVisual = ({ type }) => {
       return (
         <div className="w-full h-full bg-gradient-to-br from-[#160202] via-[#090101] to-black p-5 flex flex-col justify-between select-none opacity-85 group-hover:opacity-100 transition-opacity duration-700">
           <div className="flex items-center justify-between border-b border-white/10 pb-2">
-            <span className="text-xs font-mono text-white/90 font-bold">Data Analytics &amp; EDA</span>
-            <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-white/10 text-white/70">Python · Pandas</span>
+            <span className="text-xs font-mono text-white/90 font-bold">Geospatial Processing</span>
+            <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-white/10 text-white/70">PostGIS · SQL</span>
           </div>
           <div className="my-auto py-2">
             <div className="bg-white/5 border border-white/10 rounded-xl p-3 flex items-center justify-between">
               <div>
                 <span className="text-[10px] text-white/50 font-mono block">Data Pipeline</span>
-                <span className="text-xs font-bold text-white">Statistical Distributions</span>
+                <span className="text-xs font-bold text-white">Spatial Mapping</span>
               </div>
-              <span className="px-2 py-1 rounded bg-emerald-500/20 text-emerald-400 text-[10px] font-mono font-bold">Mean &amp; Variance</span>
+              <span className="px-2 py-1 rounded bg-emerald-500/20 text-emerald-400 text-[10px] font-mono font-bold">Polygons</span>
             </div>
             <div className="grid grid-cols-2 gap-2 mt-2">
               <div className="bg-white/5 border border-white/10 rounded-lg p-2 text-[10px] text-white/70 font-mono">
-                ✓ Outlier Detection
+                ✓ Geo Queries
               </div>
               <div className="bg-white/5 border border-white/10 rounded-lg p-2 text-[10px] text-white/70 font-mono">
-                ✓ Visual Histograms
+                ✓ Deformation Maps
               </div>
             </div>
           </div>
-          <span className="text-[9px] font-mono text-white/40">Exploratory Data Analysis Roadmap</span>
+          <span className="text-[9px] font-mono text-white/40">Geospatial Analytics Infrastructure</span>
         </div>
       );
 
     case 'ai':
+    default:
       return (
         <div className="w-full h-full bg-gradient-to-br from-[#150202] via-[#080101] to-black p-5 flex flex-col justify-between select-none opacity-85 group-hover:opacity-100 transition-opacity duration-700">
           <div className="flex items-center justify-between border-b border-white/10 pb-2">
-            <span className="text-xs font-mono text-white/90 font-bold">Intelligent Agent Design</span>
-            <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-400">Heuristic Search</span>
+            <span className="text-xs font-mono text-white/90 font-bold">Multimodal GenAI & Digital Twin</span>
+            <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-400">LangChain4j</span>
           </div>
           <div className="my-auto py-2 space-y-2">
             <div className="flex items-center justify-between bg-white/5 border border-white/10 p-2 rounded-lg">
-              <span className="text-[11px] text-white font-medium">State-Space Search</span>
-              <span className="text-[11px] text-[#f50604] font-bold">A* Heuristics</span>
+              <span className="text-[11px] text-white font-medium">InSAR Deformation</span>
+              <span className="text-[11px] text-[#f50604] font-bold">Spatial Engine</span>
             </div>
             <div className="flex items-center justify-between bg-white/5 border border-white/10 p-2 rounded-lg">
-              <span className="text-[11px] text-white font-medium">Decision Tree Nodes</span>
-              <span className="text-[11px] text-emerald-400 font-bold">Optimal Branch</span>
+              <span className="text-[11px] text-white font-medium">Multimodal Data</span>
+              <span className="text-[11px] text-emerald-400 font-bold">Fusion API</span>
             </div>
             <div className="flex items-center justify-between bg-white/5 border border-white/10 p-2 rounded-lg">
-              <span className="text-[11px] text-white font-medium">Knowledge Base</span>
-              <span className="text-[11px] text-white font-bold">Stateful</span>
+              <span className="text-[11px] text-white font-medium">Risk Diagnostics</span>
+              <span className="text-[11px] text-white font-bold">LLM Reasoning</span>
             </div>
           </div>
-          <span className="text-[9px] font-mono text-white/40">B.Tech AI Specialization Core</span>
-        </div>
-      );
-
-    case 'ml':
-    default:
-      return (
-        <div className="w-full h-full bg-gradient-to-br from-[#200303] via-[#0d0101] to-black p-6 flex flex-col justify-between select-none opacity-85 group-hover:opacity-100 transition-opacity duration-700">
-          <div className="flex items-center justify-between border-b border-white/10 pb-3">
-            <div className="flex items-center gap-2">
-              <span className="w-3 h-3 rounded-full bg-[#f50604]"></span>
-              <span className="text-xs font-mono text-white font-bold uppercase tracking-wider">
-                Machine Learning Predictive Modeling Lab
-              </span>
-            </div>
-            <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-white/10 text-white/70">
-              Supervised Learning
-            </span>
-          </div>
-          <div className="my-auto grid grid-cols-2 md:grid-cols-4 gap-3 py-4">
-            <div className="bg-white/5 border border-white/10 rounded-xl p-3 text-center">
-              <div className="text-xl mb-1">📐</div>
-              <span className="text-xs font-bold text-white block">Linear Regr.</span>
-              <span className="text-[10px] text-white/50 font-mono">Gradient Descent</span>
-            </div>
-            <div className="bg-white/5 border border-white/10 rounded-xl p-3 text-center">
-              <div className="text-xl mb-1">🌲</div>
-              <span className="text-xs font-bold text-white block">Classifiers</span>
-              <span className="text-[10px] text-white/50 font-mono">Random Forests</span>
-            </div>
-            <div className="bg-white/5 border border-white/10 rounded-xl p-3 text-center">
-              <div className="text-xl mb-1">📊</div>
-              <span className="text-xs font-bold text-white block">Evaluation</span>
-              <span className="text-[10px] text-white/50 font-mono">Precision &amp; Recall</span>
-            </div>
-            <div className="bg-white/5 border border-white/10 rounded-xl p-3 text-center">
-              <div className="text-xl mb-1">🔬</div>
-              <span className="text-xs font-bold text-white block">Validation</span>
-              <span className="text-[10px] text-white/50 font-mono">k-Fold Splits</span>
-            </div>
-          </div>
-          <div className="flex items-center justify-between text-[10px] font-mono text-white/50">
-            <span>B.Tech AI &amp; Data Science Research Trajectory</span>
-            <span className="text-[#f50604] font-bold">Planned Implementation</span>
-          </div>
+          <span className="text-[9px] font-mono text-white/40">Backend GenAI Integration</span>
         </div>
       );
   }
