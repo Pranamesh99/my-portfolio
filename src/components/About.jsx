@@ -39,6 +39,15 @@ const AIIcon = () => (
   </div>
 );
 
+const MLIcon = () => (
+  <div className="flex flex-col items-center gap-2 group">
+    <div className="w-16 h-16 md:w-20 md:h-20 bg-[#08233a] border-2 border-[#38bdf8] rounded-2xl flex items-center justify-center shadow-[0_0_20px_rgba(56,189,248,0.3)] group-hover:scale-110 transition-transform duration-300">
+      <span className="text-[#38bdf8] text-xl md:text-2xl font-black font-mono select-none">ML</span>
+    </div>
+    <span className="text-xs font-bold text-white/90 uppercase tracking-wider font-mono">AI / ML</span>
+  </div>
+);
+
 const About = () => {
   const { aboutContent, personalInfo } = usePortfolio();
 
@@ -130,6 +139,9 @@ const About = () => {
             </div>
             <div data-aos="zoom-in" data-aos-delay="600" className="hover:scale-110 transition-transform duration-300 cursor-pointer drop-shadow-2xl">
               <AIIcon />
+            </div>
+            <div data-aos="zoom-in" data-aos-delay="700" className="hover:scale-110 transition-transform duration-300 cursor-pointer drop-shadow-2xl">
+              <MLIcon />
             </div>
           </div>
 
