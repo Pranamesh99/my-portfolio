@@ -2,40 +2,40 @@ import React from 'react';
 import stackImage from '../assets/about/deepak-avatar.png';
 import { usePortfolio } from '../context/PortfolioContext';
 
-// Technology Badges with crisp SVG styling tailored for Yash
-const PythonIcon = () => (
+// Technology Badges with crisp SVG styling tailored for Deepak
+const JavaIcon = () => (
   <div className="flex flex-col items-center gap-2 group">
-    <div className="w-16 h-16 md:w-20 md:h-20 bg-[#08233a] border-2 border-[#38bdf8] rounded-2xl flex items-center justify-center shadow-[0_0_20px_rgba(56,189,248,0.3)] group-hover:scale-110 transition-transform duration-300">
-      <span className="text-[#38bdf8] text-2xl md:text-3xl font-black font-mono select-none">Py</span>
+    <div className="w-16 h-16 md:w-20 md:h-20 bg-[#1e1e1e] border-2 border-[#f89820] rounded-2xl flex items-center justify-center shadow-[0_0_20px_rgba(248,152,32,0.3)] group-hover:scale-110 transition-transform duration-300">
+      <span className="text-[#f89820] text-xl md:text-2xl font-black font-mono select-none">Java</span>
     </div>
-    <span className="text-xs font-bold text-white/90 uppercase tracking-wider font-mono">Python</span>
+    <span className="text-xs font-bold text-white/90 uppercase tracking-wider font-mono">Java</span>
   </div>
 );
 
-const LogicIcon = () => (
+const SpringIcon = () => (
   <div className="flex flex-col items-center gap-2 group">
-    <div className="w-16 h-16 md:w-20 md:h-20 bg-[#252000] border-2 border-[#f7df1e] rounded-2xl flex items-center justify-center shadow-[0_0_20px_rgba(247,223,30,0.3)] group-hover:scale-110 transition-transform duration-300">
-      <span className="text-[#f7df1e] text-2xl md:text-3xl font-black font-mono select-none">&lt;/&gt;</span>
+    <div className="w-16 h-16 md:w-20 md:h-20 bg-[#002b18] border-2 border-[#6db33f] rounded-2xl flex items-center justify-center shadow-[0_0_20px_rgba(109,179,63,0.3)] group-hover:scale-110 transition-transform duration-300">
+      <span className="text-[#6db33f] text-xl md:text-2xl font-black font-mono select-none">Sp</span>
     </div>
-    <span className="text-xs font-bold text-white/90 uppercase tracking-wider font-mono">Logic &amp; CS</span>
+    <span className="text-xs font-bold text-white/90 uppercase tracking-wider font-mono">Spring Boot</span>
   </div>
 );
 
-const WebIcon = () => (
+const ReactIcon = () => (
   <div className="flex flex-col items-center gap-2 group">
-    <div className="w-16 h-16 md:w-20 md:h-20 bg-[#2b0c03] border-2 border-[#e34f26] rounded-2xl flex items-center justify-center shadow-[0_0_20px_rgba(227,79,38,0.3)] group-hover:scale-110 transition-transform duration-300">
-      <span className="text-[#e34f26] text-xl md:text-2xl font-black font-mono select-none">Web</span>
+    <div className="w-16 h-16 md:w-20 md:h-20 bg-[#08233a] border-2 border-[#61dafb] rounded-2xl flex items-center justify-center shadow-[0_0_20px_rgba(97,218,251,0.3)] group-hover:scale-110 transition-transform duration-300">
+      <span className="text-[#61dafb] text-xl md:text-2xl font-black font-mono select-none">Re</span>
     </div>
-    <span className="text-xs font-bold text-white/90 uppercase tracking-wider font-mono">HTML / CSS</span>
+    <span className="text-xs font-bold text-white/90 uppercase tracking-wider font-mono">React JS</span>
   </div>
 );
 
-const DataIcon = () => (
+const AIIcon = () => (
   <div className="flex flex-col items-center gap-2 group">
-    <div className="w-16 h-16 md:w-20 md:h-20 bg-[#001c2b] border-2 border-[#00d8ff] rounded-2xl flex items-center justify-center shadow-[0_0_20px_rgba(0,216,255,0.3)] group-hover:scale-110 transition-transform duration-300">
-      <span className="text-[#00d8ff] text-2xl md:text-3xl font-black font-mono select-none">AI+DS</span>
+    <div className="w-16 h-16 md:w-20 md:h-20 bg-[#250000] border-2 border-[#f50604] rounded-2xl flex items-center justify-center shadow-[0_0_20px_rgba(245,6,4,0.3)] group-hover:scale-110 transition-transform duration-300">
+      <span className="text-[#f50604] text-xl md:text-2xl font-black font-mono select-none">AI</span>
     </div>
-    <span className="text-xs font-bold text-white/90 uppercase tracking-wider font-mono">Data Science</span>
+    <span className="text-xs font-bold text-white/90 uppercase tracking-wider font-mono">GenAI & RAG</span>
   </div>
 );
 
@@ -48,7 +48,7 @@ const About = () => {
         
         {/* Left Side: ID Badge with Swinging Drop-Bounce Animation */}
         <div className="flex flex-col items-center w-full md:w-[350px] shrink-0 mt-8 md:mt-0">
-          <div data-aos="drop-bounce" className="relative flex justify-center w-full">
+          <div data-aos="drop-bounce" className="relative flex justify-center w-full z-40">
             {/* Lanyard strap */}
             <div className="absolute -top-24 md:-top-36 left-1/2 w-2.5 md:w-3.5 h-28 md:h-44 bg-black transform -translate-x-1/2 shadow-inner z-0"></div>
             {/* Lanyard metal clip */}
@@ -75,7 +75,7 @@ const About = () => {
                   {personalInfo.name}
                 </div>
                 <div className="text-red-400 text-[10px] font-mono mt-0.5">
-                  {personalInfo.shortTitle || "AI & Data Science"} · {personalInfo.university.split(',')[0]}
+                  {personalInfo.shortTitle || "Computer Science"} · {personalInfo.university.split(',')[0]}
                 </div>
               </div>
             </div>
@@ -83,7 +83,7 @@ const About = () => {
         </div>
 
         {/* Right Side: Info Content */}
-        <div data-aos="fade-left" data-aos-delay="200" className="flex-1 text-white mt-8 md:mt-0 relative z-20">
+        <div data-aos="fade-left" data-aos-delay="200" className="flex-1 text-white mt-8 md:mt-0 relative z-40">
           
           <div className="inline-block px-3.5 py-1 rounded-full bg-black/30 border border-white/20 text-xs uppercase tracking-widest font-mono font-bold mb-4">
             About {personalInfo.firstName}
@@ -105,31 +105,31 @@ const About = () => {
           <div className="p-4 rounded-xl bg-black/20 border border-white/15 max-w-2xl mb-8 flex flex-wrap items-center justify-between gap-4 text-xs font-mono">
             <div>
               <span className="text-white font-bold block text-sm">University &amp; Term</span>
-              <span className="text-white/80">{personalInfo.university} · {personalInfo.semester}</span>
+              <span className="text-white/80">{personalInfo.university.split(',')[0]} · {personalInfo.semester}</span>
             </div>
             <div>
               <span className="text-white font-bold block text-sm">Degree Program</span>
-              <span className="text-white/80">B.Tech in AI &amp; Data Science</span>
+              <span className="text-white/80">B.Tech in Computer Science</span>
             </div>
             <div>
-              <span className="text-white font-bold block text-sm">High School Record</span>
-              <span className="text-white/80">88% (12th) · 91% (10th)</span>
+              <span className="text-white font-bold block text-sm">Academic Record</span>
+              <span className="text-white/80">8.32 CGPA · 100+ DSA</span>
             </div>
           </div>
 
           {/* Horizontal Skills Badges Row */}
           <div className="flex flex-wrap items-center gap-6 md:gap-8 mt-6">
             <div data-aos="zoom-in" data-aos-delay="300" className="hover:scale-110 transition-transform duration-300 cursor-pointer drop-shadow-2xl">
-              <PythonIcon />
+              <JavaIcon />
             </div>
             <div data-aos="zoom-in" data-aos-delay="400" className="hover:scale-110 transition-transform duration-300 cursor-pointer drop-shadow-2xl">
-              <LogicIcon />
+              <SpringIcon />
             </div>
             <div data-aos="zoom-in" data-aos-delay="500" className="hover:scale-110 transition-transform duration-300 cursor-pointer drop-shadow-2xl">
-              <WebIcon />
+              <ReactIcon />
             </div>
             <div data-aos="zoom-in" data-aos-delay="600" className="hover:scale-110 transition-transform duration-300 cursor-pointer drop-shadow-2xl">
-              <DataIcon />
+              <AIIcon />
             </div>
           </div>
 
